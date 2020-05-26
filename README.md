@@ -1,11 +1,11 @@
 # resource-families-link-checker
 
-Scrapy-based link checker for the [https://www.clarin.eu/resource-families](CLARIN resource families). Inspired by:
+Scrapy-based link checker for the [CLARIN resource families](https://www.clarin.eu/resource-families). Inspired by:
 
-* [https://github.com/datacite/pidcheck](The DataCite PidCheck)
-* [https://docs.scrapy.org/en/1.6/intro/tutorial.html](The Scrapy tutorial)
+* [The DataCite PidCheck](https://github.com/datacite/pidcheck)
+* [The Scrapy tutorial](https://docs.scrapy.org/en/1.6/intro/tutorial.html)
 
-Use: ```scrapy crawl resfam -o resfam-20200520.csv &> logs-resfam-20200520.txt
+Use: `scrapy crawl resfam -o resfam-20200520.csv &> logs-resfam-20200520.txt`
 
 This will store the resulting CSV with the check results in resfam-20200520.csv and store verbose logs in logs-resfam-20200520.txt
 
