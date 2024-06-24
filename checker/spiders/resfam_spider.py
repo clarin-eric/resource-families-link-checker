@@ -38,7 +38,8 @@ class QuotesSpider(scrapy.Spider):
 		GET_list = ['https://kontext.korpus.cz/', 'https://lindat.mff.cuni.cz/services/kontext/']	
 		page = response.url.split("/")[-1]
 		# extract relevant URLs from webpage
-		for url in response.xpath('//div[@class="region region-content"]//a[not(starts-with(@href, "#") or starts-with(@href, "mailto"))]/@href'):
+		for url in response.xpath('//div[@class="content"]//a[not(starts-with(@href, "#") or starts-with(@href, "mailto"))]/@href'):
+			#print("the URL to be checked is" + url)
 			link = url.get()
 			http_method = 'HEAD'
 			for GET_link in GET_list:
